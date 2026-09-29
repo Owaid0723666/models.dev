@@ -1,9 +1,10 @@
-# Effort: reasoning_effort = none|low|medium|high|xhigh. onomeo's main route for
-# this model answers an unknown value with "should be one of: low, medium, high,
-# xhigh, none" (tested 2026-09-29); none turns thinking off, which onomeo's own
-# thinking check also records. No separate toggle, since effort includes none.
+# Effort: reasoning_effort = none|high. onomeo's main route for this model
+# accepts none|low|medium|high|xhigh (its error text lists them) and rejects
+# max, but a live test on 2026-09-29 showed no grading between low, medium,
+# high and xhigh; none turns reasoning off. Aligned to the lab-effective level
+# (DeepSeek maps low/medium to high). No separate toggle on this route.
 base_model = "deepseek/deepseek-v4-flash"
-reasoning_options = [{ type = "effort", values = ["none", "low", "medium", "high", "xhigh"] }]
+reasoning_options = [{ type = "effort", values = ["none", "high"] }]
 
 [cost]
 input = 0
