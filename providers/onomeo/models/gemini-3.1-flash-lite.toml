@@ -7,3 +7,7 @@ reasoning_options = [{ type = "effort", values = ["minimal", "low", "medium", "h
 
 [modalities]
 input = ["text", "image"]
+
+[cost]
+input = 0
+output = 0
