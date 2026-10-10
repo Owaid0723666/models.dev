@@ -8,7 +8,7 @@
 # charged by usage from a US-dollar balance, at per-model prices listed at
 # https://onomeo.com/models#pricing. Topping up is optional and starts at $5;
 # the balance does not expire and nothing renews automatically.
-# https://onomeo.com/models (accessed 2026-10-06)
+# https://onomeo.com/models (accessed 2026-10-10)
 # https://onomeo.com/integrations/opencode (accessed 2026-09-21)
 name = "onomeo"
 env = ["ONOMEO_API_KEY"]
